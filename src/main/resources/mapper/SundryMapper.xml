@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bishe.mapper.SundryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.bishe.entity.Sundry">
+        <id column="id" property="id" />
+        <result column="sundry_name" property="sundryName" />
+        <result column="sundry_describe" property="sundryDescribe" />
+        <result column="sundry_image" property="sundryImage" />
+        <result column="sundry_prov" property="sundryProv" />
+        <result column="sundry_birth" property="sundryBirth" />
+        <result column="sundry_from" property="sundryFrom" />
+        <result column="sundry_country" property="sundryCountry" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, sundry_name, sundry_describe, sundry_image, sundry_prov, sundry_birth, sundry_from, sundry_country
+    </sql>
+
+</mapper>

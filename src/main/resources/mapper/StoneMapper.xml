@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bishe.mapper.StoneMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.bishe.entity.Stone">
+        <id column="id" property="id" />
+        <result column="stone_name" property="stoneName" />
+        <result column="stone_describe" property="stoneDescribe" />
+        <result column="stone_image" property="stoneImage" />
+        <result column="stone_prov" property="stoneProv" />
+        <result column="stone_birth" property="stoneBirth" />
+        <result column="stone_from" property="stoneFrom" />
+        <result column="stone_country" property="stoneCountry" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, stone_name, stone_describe, stone_image, stone_prov, stone_birth, stone_from, stone_country
+    </sql>
+
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bishe.mapper.RelicMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.bishe.entity.Relic">
+        <id column="id" property="id" />
+        <result column="relic_name" property="relicName" />
+        <result column="relic_describe" property="relicDescribe" />
+        <result column="relic_image" property="relicImage" />
+        <result column="relic_prov" property="relicProv" />
+        <result column="relic_birth" property="relicBirth" />
+        <result column="relic_from" property="relicFrom" />
+        <result column="relic_country" property="relicCountry" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, relic_name, relic_describe, relic_image, relic_prov, relic_birth, relic_from, relic_country
+    </sql>
+
+</mapper>

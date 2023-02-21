@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bishe.mapper.PotteryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.bishe.entity.Pottery">
+        <id column="id" property="id" />
+        <result column="pottery_name" property="potteryName" />
+        <result column="pottery_describe" property="potteryDescribe" />
+        <result column="pottery_image" property="potteryImage" />
+        <result column="pottery_prov" property="potteryProv" />
+        <result column="pottery_birth" property="potteryBirth" />
+        <result column="pottery_from" property="potteryFrom" />
+        <result column="pottery_country" property="potteryCountry" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, pottery_name, pottery_describe, pottery_image, pottery_prov, pottery_birth,pottery_from,pottery_country
+    </sql>
+
+</mapper>

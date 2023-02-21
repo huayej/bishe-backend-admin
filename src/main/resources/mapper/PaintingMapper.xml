@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bishe.mapper.PaintingMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.bishe.entity.Painting">
+        <id column="id" property="id" />
+        <result column="painting_name" property="paintingName" />
+        <result column="painting_describe" property="paintingDescribe" />
+        <result column="painting_image" property="paintingImage" />
+        <result column="painting_author" property="paintingAuthor" />
+        <result column="painting_birth" property="paintingBirth" />
+        <result column="author_from" property="authorFrom" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, painting_name, painting_describe, painting_image, painting_author, painting_birth,author_from
+    </sql>
+
+</mapper>

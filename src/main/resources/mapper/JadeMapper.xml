@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bishe.mapper.JadeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.bishe.entity.Jade">
+        <id column="id" property="id" />
+        <result column="jade_name" property="jadeName" />
+        <result column="jade_describe" property="jadeDescribe" />
+        <result column="jade_image" property="jadeImage" />
+        <result column="jade_prov" property="jadeProv" />
+        <result column="jade_birth" property="jadeBirth" />
+        <result column="jade_from" property="jadeFrom" />
+        <result column="jade_country" property="jadeCountry" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, jade_name, jade_describe, jade_image, jade_prov, jade_birth, jade_from, jade_country
+    </sql>
+
+</mapper>
