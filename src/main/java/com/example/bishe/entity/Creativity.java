@@ -38,5 +38,5 @@ public class Creativity implements Serializable {
 
     private Integer uid;
 
-
+    private Integer sale;
 }
