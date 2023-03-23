@@ -38,6 +38,11 @@ public class UserController {
         List list = userService.lambdaQuery().eq(User::getUid,uid).list();
         return list.size()>0?Result.suc(list):Result.fail();
     }
+    @GetMapping("findByUsername")
+    public Result findByUsername(@RequestParam String username){
+        List list = userService.lambdaQuery().eq(User::getUsername,username).list();
+        return list.size()>0?Result.suc(list):Result.fail();
+    }
     //新增
     @PostMapping("/save")
     public Result save(@RequestBody User user){
